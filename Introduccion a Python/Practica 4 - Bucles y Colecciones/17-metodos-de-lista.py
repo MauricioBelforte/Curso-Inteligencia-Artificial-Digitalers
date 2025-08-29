@@ -46,8 +46,6 @@ print(numeros_primos)             # Imprime la lista actualizada de numeros_prim
 # Puede ser cualquier objeto iterable 
 # objeto_iterable: lista, string, tupla
 # nombre_lista.extend(objeto_iterable)
-
-
 print()
 
 
@@ -70,13 +68,6 @@ print(numeros_primos)  # Imprime la lista vacía
 print()
 
 
-#.remove() Para eliminar un elemento especifico de la lista, lo busca y lo elimina
-print(".remove()")
-datos.remove(False)  # Elimina el valor False de la lista datos
-print(datos)         # Imprime la lista actualizada de datos
-print()
-
-
 # .len() Para obtener la longitud de la lista
 print(".len()")
 print("Longitud de numeros_primos:", len(numeros_primos))  # Imprime la longitud de la lista numeros_primos
@@ -84,6 +75,11 @@ print("Longitud de alumnos:", len(alumnos))                # Imprime la longitud
 print()
 
 
+#.remove() Para eliminar un elemento especifico de la lista, lo busca y lo elimina
+print(".remove()")
+datos.remove(False)  # Elimina el valor False de la lista datos
+print(datos)         # Imprime la lista actualizada de datos
+print()
 
 
 # Otra forma de eliminar elementos: del Para eliminar un elemento en una posicion especifica
@@ -91,3 +87,7 @@ print("del")
 del alumnos[1]  # Elimina el elemento en la posición 1 de la lista alumnos
 print(alumnos)  # Imprime la lista actualizada de alumnos
 print()
+
+
+
+

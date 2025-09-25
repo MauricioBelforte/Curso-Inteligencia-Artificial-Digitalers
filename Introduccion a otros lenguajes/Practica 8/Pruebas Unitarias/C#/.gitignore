@@ -1,0 +1,40 @@
+## Archivos y carpetas generados por .NET y C#
+[Bb]in/
+[Oo]bj/
+
+## Archivos de configuración de Visual Studio y VS Code
+# Estos archivos guardan configuraciones locales del usuario y no deben ser compartidos.
+.vs/
+.vscode/
+
+## Archivos específicos de Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Resultados de pruebas
+# Carpeta donde 'dotnet test' puede guardar resultados detallados.
+[Tt]est[Rr]esult*/
+
+## Paquetes de NuGet
+# En proyectos modernos de .NET, los paquetes se restauran automáticamente,
+# por lo que no es necesario versionar la carpeta 'packages'.
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## Archivos de publicación
+*.publish.xml
+*.pubxml
+
+## Archivos de registro y temporales
+*.log
+*.tlog
+
+## Archivos del sistema operativo
+# Ignorar archivos de sistema de macOS y Windows
+.DS_Store
+Thumbs.db
+
+## Archivos de Rider (otro IDE para .NET)
+.idea/

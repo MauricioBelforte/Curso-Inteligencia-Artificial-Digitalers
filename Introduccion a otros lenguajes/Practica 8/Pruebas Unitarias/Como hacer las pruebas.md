@@ -40,7 +40,7 @@ En cada lenguaje cambia un poco. Te detallo caso por caso:
 
 ---
 
-## 🔹 **C#**
+## 🔹 **C#** (Tener en cuenta que esta opcion no funciona en VS Code)
 
 * El ejemplo usa **NUnit**, que sí requiere instalación de paquetes con NuGet:
 
@@ -58,6 +58,52 @@ En cada lenguaje cambia un poco. Te detallo caso por caso:
 👉 Si no querés instalar NUnit, también podés usar **xUnit** o **MSTest**, pero siempre hay que agregar algún framework de test.
 
 ---
+
+
+Con **Visual Studio (el IDE completo, no VS Code)** la cosa cambia un poco:
+
+---
+
+### 🔹 En Visual Studio completo
+
+1. Creás un **proyecto de pruebas unitarias** desde el asistente (te deja elegir: MSTest, NUnit o xUnit).
+   👉 Visual Studio ya te instala y configura los paquetes de NuGet automáticamente.
+
+2. Si en cambio creás un **proyecto vacío** (por ejemplo, un "Console App"), ahí sí tenés que:
+
+   * Abrir el **Administrador de Paquetes NuGet** desde el IDE.
+   * Buscar e instalar `NUnit`, `NUnit3TestAdapter` y `Microsoft.NET.Test.Sdk`.
+   * Recién ahí podés escribir tus tests.
+
+3. Cuando corrés los tests, Visual Studio usa el **Test Explorer** integrado (no necesitás la terminal).
+
+---
+
+### 🔹 Diferencia con VS Code
+
+* En **VS Code** trabajás siempre con la **CLI de .NET (`dotnet`)**.
+
+  * Si querés hacerlo “a mano”:
+
+    ```bash
+    dotnet new console -n MiProyecto
+    cd MiProyecto
+    dotnet add package NUnit
+    dotnet add package NUnit3TestAdapter
+    dotnet add package Microsoft.NET.Test.Sdk
+    ```
+  * O con el atajo:
+
+    ```bash
+    dotnet new nunit -n MiProyecto
+    ```
+
+* En **Visual Studio completo**, esas opciones ya están integradas en el asistente y en el gestor de paquetes.
+  👉 Es más “gráfico” y más parecido a lo que estabas intentando.
+
+---
+
+
 
 ## 🔹 **Java**
 

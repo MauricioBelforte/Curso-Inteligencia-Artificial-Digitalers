@@ -1,0 +1,28 @@
+# Dependencias
+# Ignora el directorio donde se instalan los paquetes de npm.
+/node_modules
+
+# Archivos de Log
+# Ignora archivos de log que puedan generar npm u otras herramientas.
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Reportes de cobertura de pruebas
+# Ignora la carpeta que Jest u otras herramientas usan para los reportes de cobertura.
+coverage
+*.lcov
+
+# Archivos del sistema operativo
+# Ignora archivos de metadatos de macOS.
+.DS_Store
+
+# Archivos de configuración de editores de código
+# Ignora configuraciones específicas de Visual Studio Code o WebStorm/IntelliJ.
+.vscode/
+.idea/
+
+# Archivos de entorno (si los usaras en el futuro para guardar contraseñas, etc.)
+.env
